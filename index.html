@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Document</title>
+
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2{
+        color: green
+    }
+    
+    label, input{
+        margin-bottom: 10px;
+    }
+    
+    
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="." method="get">
+        <h2>Informe o CEP</h2>
+        <label for="">CEP:</label> <input type="text" name="inputCep" value="" size="10" maxlength="9" onblur="searchCep(this.value)"><br> 
+        <label for="">Rua:</label> <input type="text" name="inputRua" id="rua"><br> 
+        <label for="">Bairro:</label> <input type="text" name="inputBairro" id="bairro"><br> 
+        <label for="">Cidade:</label> <input type="text" name="inputCidade" id="cidade"><br> 
+        <label for="">Estado:</label> <input type="text" name="inputEstado" id="estado"><br> 
+        <label for="">IBGE:</label> <input type="text" name="inputIBGE" id="ibge"><br> 
+    </form>
+</body>
+</html>
